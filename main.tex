@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
+\title{Math meets Biology}
+\author{Mario Kunz, Xaver Hanushevsky}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+System zweier Differentialgleichungen zum Beschreiben der positiven Autoregulation:
+
+\begin{align*}
+    \frac{d[RNA]}{dt}&=v_{max}\cdot\frac{[P]}{K+[P]}-k_{dr}\cdot[RNA] \\
+    \frac{d[P]}{dt}&=k_s\cdot[RNA]-k_{dp}\cdot[P]
+\end{align*}
+
+\begin{tabular}{l l}
+     $[RNA]$ & Konzentration der transkribierten mRNA \\
+     $[P]$ & Konzentration des Proteins/Transkriptionsfaktor \\
+     $v_{max}$ & maximale Geschwindigkeit der Transkription; entspricht $k_t\cdot [D_T]$ \\
+     $k_t$ & Geschwindigkeitskonstante der Transkription \\
+     $[D_T]$ & Konzentration der DNA bzw. TF-Bindungsstelle \\
+     $K$ & Gleichgewichtskonstante der Bindung vom TF an die DNA-Bindungsstelle \\
+     $k_{dr}$ & Geschwindigkeitskonstante der mRNA-Degradatioon \\
+     $k_{dp}$ & Geschwindigkeitskonstante der Proteindegradation
+\end{tabular}
+
+\end{document}
