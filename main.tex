@@ -36,7 +36,7 @@ System zweier Differentialgleichungen zum Beschreiben der positiven Autoregulati
      $k_{dr}$ & Geschwindigkeitskonstante der mRNA-Degradation \\
      $k_{dp}$ & Geschwindigkeitskonstante der Proteindegradation
 \end{tabular}
-%Bei uns ist der TF direkt das Protein $P$, oder? Ja genau, P und TF sind synonym
+
 
 \subsection{Numerische Lösung}
 
@@ -123,7 +123,11 @@ Lac-Operon\cite{lacoperon}
 Eine wichtige Regulation des Lac-Operons ist die Repression des Gens, sofern eine geringe Lactose Konzentration in der Zelle vorherrscht. Dies wird erreicht, indem der Repressor \emph{LacI} nur an die DNA binden kann, wenn er nicht gleichzeitig mit Allolactose gebunden ist. Allolactose ist verwandt mit Lactose, welches die gleichen Zucker beinhaltet, diese aber anders verbunden sind. Das Enzym $\beta$-galactosidase (\emph{LacZ}) kann von der Zelle aufgenommene Lactose in Allolactose umwandeln. Die Produktion von Allolactose führt in der Folge zur weiteren Exprimierung des lac-operons und stellt somit eine positive Rückkopplung dar.
 \par
 
-
+\emph{Das Modell kann so noch nicht funktionieren}
+\begin{itemize}
+    \item Konzentration von Lactose geht noch ins negative, was sinnlos ist. Ist die vorliegende Kinetik überhaupt korrekt oder machen wir noch einen Überlegungsfehler?
+    \item Erreicht die Konzentration von Lactose 0, sollte eigentlich gar nichts mehr produziert werde und ich würde eine abflachende Kurve erwarten. Aktuell bleiben die Konzentrationen von mRNA und Lactase auf einem Steady-State.
+\end{itemize}
 
 \begin{align*}
     \frac{d[\text{Lactose}]}{dt}&=-k_\text{lac}\cdot [\text{Lactase}] \\
