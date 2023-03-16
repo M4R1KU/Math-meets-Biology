@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1164 715" style="enable-background:new 0 0 1164 715;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#F8CECC;stroke-width:13.5;}
+	.st2{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:45px;}
+	.st6{fill:#D5E8D4;stroke:#82B366;stroke-width:3;}
+	.st7{font-size:47.6967px;}
+	.st8{fill:#FFE6CC;stroke:#D79B00;stroke-width:3;}
+	.st9{fill:#DAE8FC;stroke:#6C8EBF;stroke-width:3;}
+	.st10{fill:url(#SVGID_1_);stroke:#B85450;stroke-width:3;}
+	.st11{font-family:'Arial-ItalicMT';}
+	.st12{fill:url(#SVGID_00000066509436589209937170000018195900063925547685_);stroke:#B85450;stroke-width:3;}
+</style>
+<pattern  y="715" width="70.5" height="70.5" patternUnits="userSpaceOnUse" id="mx-pattern-hatch-3-f8cecc-0" viewBox="6.8 -70.5 70.5 70.5" style="overflow:visible;">
+	<g>
+		<rect x="6.8" y="-70.5" class="st0" width="70.5" height="70.5"/>
+		<line class="st1" x1="6.8" y1="0" x2="6.8" y2="-70.5"/>
+	</g>
+</pattern>
+<path class="st0" d="z"/>
+<g>
+	<path pointer-events="stroke" class="st2" d="M207.7,605.2V415.5"/>
+	<path pointer-events="all" class="st3" d="M207.7,399.9l10.3,20.9l-10.3-5.2l-10.3,5.2L207.7,399.9z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 75.9223 163.9609)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 83.2947 168.956)" class="st4 st5">off</text>
+	</g>
+	<rect x="31.9" y="605.2" pointer-events="all" class="st6" width="234.4" height="89.4"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 25.3984 221.611)" class="st4 st7">DNA-P</text>
+	</g>
+	<path pointer-events="stroke" class="st2" d="M735.2,649.9H951"/>
+	<path pointer-events="all" class="st3" d="M966.3,649.9l-20.5,10.4l5.1-10.4l-5.1-10.4L966.3,649.9z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 251.4258 231.7134)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 258.7982 236.7085)" class="st4 st5">rna-degradation</text>
+	</g>
+	<rect x="559.4" y="605.2" pointer-events="all" class="st8" width="175.8" height="89.4"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 199.2646 221.611)" class="st4 st7">RNA</text>
+	</g>
+	<path pointer-events="stroke" class="st2" d="M266.3,649.9h274.4"/>
+	<path pointer-events="all" class="st3" d="M556.1,649.9l-20.5,10.4l5.1-10.4l-5.1-10.4L556.1,649.9z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 105.4012 231.7134)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 112.7736 236.7085)" class="st4 st5">transcription</text>
+	</g>
+	<path pointer-events="stroke" class="st2" d="M207.7,307.1V117.4"/>
+	<path pointer-events="all" class="st3" d="M207.7,101.8l10.3,20.9l-10.3-5.2l-10.3,5.2L207.7,101.8z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 74.9432 76.5335)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 82.3156 81.5285)" class="st4 st5">p-degradation</text>
+	</g>
+	<rect x="31.9" y="307.1" pointer-events="all" class="st9" width="234.4" height="89.4"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 19.5262 122.2428)" class="st4 st7">DNA + P</text>
+	</g>
+	<path pointer-events="stroke" class="st2" d="M90.5,396.5v189.7"/>
+	<path pointer-events="all" class="st3" d="M90.5,601.9L80.3,581l10.3,5.2l10.3-5.2L90.5,601.9z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 7.1852 163.9609)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 14.5576 168.956)" class="st4 st5">on</text>
+	</g>
+	<path pointer-events="stroke" class="st2" d="M647.3,605.2V351.8H285"/>
+	<path pointer-events="all" class="st3" d="M269.6,351.8l20.5-10.4l-5.1,10.4l5.1,10.4L269.6,351.8z"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 171.558 133.4548)" class="st4 st5">k</text>
+		<text transform="matrix(0.191 0 0 0.1943 178.9304 138.4499)" class="st4 st5">synthesis</text>
+	</g>
+	
+		<pattern  id="SVGID_1_" xlink:href="#mx-pattern-hatch-3-f8cecc-0" patternTransform="matrix(0.7071 0.7071 0.7071 -0.7071 3841.7214 -8557.4482)">
+	</pattern>
+	<rect x="90.5" y="9" pointer-events="all" class="st10" width="234.4" height="89.4"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 64.0345 22.8747)" class="st11 st7">P</text>
+	</g>
+	
+		<pattern  id="SVGID_00000140723773641168374650000010786105044442341034_" xlink:href="#mx-pattern-hatch-3-f8cecc-0" patternTransform="matrix(0.7071 0.7071 0.7071 -0.7071 3841.7214 -8557.4482)">
+	</pattern>
+	
+		<rect x="969.6" y="605.2" pointer-events="all" style="fill:url(#SVGID_00000140723773641168374650000010786105044442341034_);stroke:#B85450;stroke-width:3;" width="175.8" height="89.4"/>
+	<g transform="translate(-0.5 -0.5)scale(3)">
+		<text transform="matrix(0.3277 0 0 0.3333 336.0136 221.611)" class="st4 st7">RNA</text>
+	</g>
+</g>
+<path class="st0" d="z"/>
+</svg>
