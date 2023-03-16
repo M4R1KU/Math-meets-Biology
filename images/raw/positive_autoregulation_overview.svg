@@ -5,101 +5,53 @@
 	 style="enable-background:new 0 0 8192 4983.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{clip-path:url(#SVGID_00000020388186088112056480000002705437941336843149_);}
+	.st1{clip-path:url(#SVGID_00000093889514969913384830000012241359295325194174_);}
 	.st2{filter:url(#Adobe_OpacityMaskFilter);}
-	.st3{mask:url(#mask-0_00000060026830630129369270000018024052548369396871_);}
-	.st4{clip-path:url(#SVGID_00000156551986824034595360000011139856653622521728_);}
-	.st5{filter:url(#Adobe_OpacityMaskFilter_00000079479365907852086800000000746161673370316682_);}
-	.st6{mask:url(#mask-1_00000029727694250871232620000008790874875876003254_);}
-	.st7{fill:none;stroke:#000000;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st8{stroke:#000000;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st9{fill:#E1D5E7;stroke:#9673A6;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st10{fill:#D5E8D4;stroke:#82B366;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st11{fill:#FFE6CC;stroke:#D79B00;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st12{fill:#DAE8FC;stroke:#6C8EBF;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st13{clip-path:url(#SVGID_00000126294731508983239910000004391497107608147627_);}
-	.st14{fill:url(#path436_00000013880942153182789040000014118337731520557225_);}
-	.st15{fill:none;stroke:#B85450;stroke-width:22.7552;stroke-miterlimit:10;}
-	.st16{clip-path:url(#SVGID_00000132066755706801592470000013799549190478576789_);}
-	.st17{fill:url(#path446_00000037668883671531652380000002848346189383753650_);}
+	.st3{mask:url(#mask-1_00000029727694250871232620000008790874875876003254_);}
+	.st4{fill:none;stroke:#000000;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st5{stroke:#000000;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st6{fill:#E1D5E7;stroke:#9673A6;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st7{fill:#D5E8D4;stroke:#82B366;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st8{fill:#FFE6CC;stroke:#D79B00;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st9{fill:#DAE8FC;stroke:#6C8EBF;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st10{clip-path:url(#SVGID_00000116209778643576999120000010829574580196622982_);}
+	.st11{fill:none;stroke:#B85450;stroke-width:22.7552;stroke-miterlimit:10;}
+	.st12{clip-path:url(#SVGID_00000057145912802366247910000017744275532711367357_);}
+	.st13{fill:url(#Unnamed_Pattern);}
 </style>
-<pattern  y="4983.7" width="8192.1" height="4983.7" patternUnits="userSpaceOnUse" id="pattern-0" viewBox="0 -4983.7 8192.1 4983.7" style="overflow:visible;">
+<pattern  y="4983.7" width="8192.1" height="4983.7" patternUnits="userSpaceOnUse" id="Unnamed_Pattern" viewBox="0 -4983.7 8192.1 4983.7" style="overflow:visible;">
 	<g>
 		<rect y="-4983.7" class="st0" width="8192.1" height="4983.7"/>
-		<g id="use148_00000072269109471870704080000004208062374350151598_">
+		<g id="use169_00000046298713932725221680000012725409737551216001_">
 			<g>
 				<defs>
 					<rect id="SVGID_1_" y="-4983.7" width="8192.1" height="4983.7"/>
 				</defs>
-				<clipPath id="SVGID_00000155853951145506783830000014224368198772924831_">
+				<clipPath id="SVGID_00000147903642233518542190000001438040726683545250_">
 					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 				</clipPath>
 				
-					<g id="source-11_00000179630616392965394680000007987835298057659301_" style="clip-path:url(#SVGID_00000155853951145506783830000014224368198772924831_);">
+					<g id="source-20_00000086654736420265752540000006210961207491196840_" style="clip-path:url(#SVGID_00000147903642233518542190000001438040726683545250_);">
 					<defs>
 						<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="8192.1" height="4983.7">
 							<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
 						</filter>
 					</defs>
 					
-						<mask maskUnits="userSpaceOnUse" x="0" y="0" width="8192.1" height="4983.7" id="mask-0_00000060026830630129369270000018024052548369396871_">
-						<g id="g136_00000031208835557669213630000014738043436950676619_" class="st2">
-							<g id="use134_00000181781272276799639220000002180156114115790998_" transform="matrix(71.974867, 0, 0, 71.953692, 0, 0)">
-								
-									<image style="overflow:visible;enable-background:new    ;" width="1313" height="799" id="source-8_00000008846368318510767050000017145081993114107025_" xlink:href="146C6E7B.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
-								</image>
-							</g>
-						</g>
-					</mask>
-					<g id="g145_00000054972931437253187220000016127536183019696540_" class="st3">
-						<g id="use143_00000127741055174757425550000017728382983888707501_" transform="matrix(71.974867, 0, 0, 71.953692, 0, 0)">
-							<g transform="matrix(1 0 0 1 0 0)" style="enable-background:new    ;">
-								
-									<image style="overflow:visible;" width="1313" height="799" id="source-7_00000006680698691607446110000013769108119199831451_" xlink:href="146C6E79.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
-								</image>
-							</g>
-						</g>
-					</g>
-				</g>
-			</g>
-		</g>
-	</g>
-</pattern>
-<pattern  y="4983.7" width="8192.1" height="4983.7" patternUnits="userSpaceOnUse" id="pattern-1" viewBox="0 -4983.7 8192.1 4983.7" style="overflow:visible;">
-	<g>
-		<rect y="-4983.7" class="st0" width="8192.1" height="4983.7"/>
-		<g id="use169_00000046298713932725221680000012725409737551216001_">
-			<g>
-				<defs>
-					<rect id="SVGID_00000008143670124159888290000013875826383844986537_" y="-4983.7" width="8192.1" height="4983.7"/>
-				</defs>
-				<clipPath id="SVGID_00000084506391213917884720000002152365637392957603_">
-					<use xlink:href="#SVGID_00000008143670124159888290000013875826383844986537_"  style="overflow:visible;"/>
-				</clipPath>
-				
-					<g id="source-20_00000086654736420265752540000006210961207491196840_" style="clip-path:url(#SVGID_00000084506391213917884720000002152365637392957603_);">
-					<defs>
-						
-							<filter id="Adobe_OpacityMaskFilter_00000049918510082793964880000005477995240350011049_" filterUnits="userSpaceOnUse" x="0" y="0" width="8192.1" height="4983.7">
-							<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
-						</filter>
-					</defs>
-					
 						<mask maskUnits="userSpaceOnUse" x="0" y="0" width="8192.1" height="4983.7" id="mask-1_00000029727694250871232620000008790874875876003254_">
-						
-							<g id="g157_00000034786136632520598290000006104688012396766115_" style="filter:url(#Adobe_OpacityMaskFilter_00000049918510082793964880000005477995240350011049_);">
+						<g id="g157_00000034786136632520598290000006104688012396766115_" class="st2">
 							<g id="use155_00000155840029812481482040000015517005213109992349_" transform="matrix(71.974867, 0, 0, 71.953692, 0, 0)">
 								
-									<image style="overflow:visible;enable-background:new    ;" width="1313" height="799" id="source-17_00000164493882295102480900000016369425325812179620_" xlink:href="146C6E7F.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
+									<image style="overflow:visible;enable-background:new    ;" width="1313" height="799" id="source-17_00000164493882295102480900000016369425325812179620_" xlink:href="146C6E7B.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
 								</image>
 							</g>
 						</g>
 					</mask>
-					<g id="g166_00000155856872923929276800000017023911626329380766_" class="st6">
+					<g id="g166_00000155856872923929276800000017023911626329380766_" class="st3">
 						<g id="use164_00000103247231577295583890000009621276253722156732_" transform="matrix(71.974867, 0, 0, 71.953692, 0, 0)">
 							<g transform="matrix(1 0 0 1 0 0)" style="enable-background:new    ;">
 								
-									<image style="overflow:visible;" width="1313" height="799" id="source-16_00000176725738502343447300000002013980999187990159_" xlink:href="146C6E78.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
+									<image style="overflow:visible;" width="1313" height="799" id="source-16_00000176725738502343447300000002013980999187990159_" xlink:href="146C6E79.jpg"  transform="matrix(6.2392 0 0 -6.2374 0 0)">
 								</image>
 							</g>
 						</g>
@@ -109,8 +61,8 @@
 		</g>
 	</g>
 </pattern>
-<path id="path174" class="st7" d="M2639.6,4118.7V2898.3"/>
-<path id="path176" class="st8" d="M2639.6,2790.4l79.6,159.3l-79.6-39.8l-79.6,39.8L2639.6,2790.4z"/>
+<path id="path174" class="st4" d="M2639.6,4118.7V2898.3"/>
+<path id="path176" class="st5" d="M2639.6,2790.4l79.6,159.3l-79.6-39.8l-79.6,39.8L2639.6,2790.4z"/>
 <g id="g180">
 	<g id="use178">
 		<g id="glyph-0-1">
@@ -148,8 +100,8 @@
 		</g>
 	</g>
 </g>
-<path id="path194" class="st9" d="M22.8,1615.6h3640.8v1137.8H22.8V1615.6z"/>
-<path id="path196" class="st10" d="M22.8,4118.7h3640.8v682.7H22.8V4118.7z"/>
+<path id="path194" class="st6" d="M22.8,1615.6h3640.8v1137.8H22.8V1615.6z"/>
+<path id="path196" class="st7" d="M22.8,4118.7h3640.8v682.7H22.8V4118.7z"/>
 <g id="g204">
 	<g id="use198">
 		<g id="glyph-2-1">
@@ -187,8 +139,8 @@
 		</g>
 	</g>
 </g>
-<path id="path212" class="st7" d="M6394.2,4118.7V850.3"/>
-<path id="path214" class="st8" d="M6394.2,742l79.6,159.3l-79.6-39.8l-79.6,39.8L6394.2,742z"/>
+<path id="path212" class="st4" d="M6394.2,4118.7V850.3"/>
+<path id="path214" class="st5" d="M6394.2,742l79.6,159.3l-79.6-39.8l-79.6,39.8L6394.2,742z"/>
 <g id="g218">
 	<g id="use216">
 		<g id="glyph-0-1_00000000936968028231659640000008159745576288513465_">
@@ -350,7 +302,7 @@
 		</g>
 	</g>
 </g>
-<path id="path280" class="st11" d="M5484,4118.7h1365.3v682.7H5484V4118.7z"/>
+<path id="path280" class="st8" d="M5484,4118.7h1365.3v682.7H5484V4118.7z"/>
 <g id="g288">
 	<g id="use282">
 		<g id="glyph-3-3">
@@ -373,8 +325,8 @@
 		</g>
 	</g>
 </g>
-<path id="path290" class="st7" d="M3675,4460h1664.1"/>
-<path id="path292" class="st8" d="M5447.1,4460l-159.3,79.6l39.8-79.6l-39.8-79.6L5447.1,4460z"/>
+<path id="path290" class="st4" d="M3675,4460h1664.1"/>
+<path id="path292" class="st5" d="M5447.1,4460l-159.3,79.6l39.8-79.6l-39.8-79.6L5447.1,4460z"/>
 <g id="g296">
 	<g id="use294">
 		<g id="glyph-0-1_00000165923281698751266600000008667758192597097902_">
@@ -513,8 +465,8 @@
 		</g>
 	</g>
 </g>
-<path id="path350" class="st7" d="M2639.6,1843.2V850.3"/>
-<path id="path352" class="st8" d="M2639.6,742l79.6,159.3l-79.6-39.8l-79.6,39.8L2639.6,742z"/>
+<path id="path350" class="st4" d="M2639.6,1843.2V850.3"/>
+<path id="path352" class="st5" d="M2639.6,742l79.6,159.3l-79.6-39.8l-79.6,39.8L2639.6,742z"/>
 <g id="g356">
 	<g id="use354">
 		<g id="glyph-0-1_00000096061363563541788070000001498111447732721063_">
@@ -665,7 +617,7 @@
 		</g>
 	</g>
 </g>
-<path id="path410" class="st12" d="M477.9,1843.2h1137.8v682.7H477.9V1843.2z"/>
+<path id="path410" class="st9" d="M477.9,1843.2h1137.8v682.7H477.9V1843.2z"/>
 <g id="g418">
 	<g id="use412">
 		<g id="glyph-3-6">
@@ -690,8 +642,8 @@
 		</g>
 	</g>
 </g>
-<path id="path420" class="st7" d="M1046.7,2764.3v1209.5"/>
-<path id="path422" class="st8" d="M1046.7,4081.4l-79.6-159.3l79.6,39.8l79.6-39.8L1046.7,4081.4z"/>
+<path id="path420" class="st4" d="M1046.7,2764.3v1209.5"/>
+<path id="path422" class="st5" d="M1046.7,4081.4l-79.6-159.3l79.6,39.8l79.6-39.8L1046.7,4081.4z"/>
 <g id="g426">
 	<g id="use424">
 		<g id="glyph-0-1_00000070118075995550276460000004322779775217751971_">
@@ -723,20 +675,16 @@
 </g>
 <g>
 	<defs>
-		<rect id="SVGID_00000027599933529768671260000008253293023329056146_" x="1729.4" y="22.8" width="1820.4" height="682.7"/>
+		<rect id="SVGID_00000093138263747240980730000010165048368726167182_" x="1729.4" y="22.8" width="1820.4" height="682.7"/>
 	</defs>
-	<clipPath id="SVGID_00000138565657857915712510000005469517334554366614_">
-		<use xlink:href="#SVGID_00000027599933529768671260000008253293023329056146_"  style="overflow:visible;"/>
+	<clipPath id="SVGID_00000142145697019101409600000001415311535349308584_">
+		<use xlink:href="#SVGID_00000093138263747240980730000010165048368726167182_"  style="overflow:visible;"/>
 	</clipPath>
-	<g id="g438" style="clip-path:url(#SVGID_00000138565657857915712510000005469517334554366614_);">
-		
-			<pattern  id="path436_00000169531311977140590320000004673521055121315263_" xlink:href="#pattern-0" patternTransform="matrix(8.668512e-02 0 0 -8.668607e-02 -6876.938 -22881.0684)">
-		</pattern>
-		<path id="path436" style="fill:url(#path436_00000169531311977140590320000004673521055121315263_);" d="M1729.4,22.8h1820.4
-			v682.7H1729.4V22.8z"/>
+	<g id="g438" style="clip-path:url(#SVGID_00000142145697019101409600000001415311535349308584_);">
+		<path id="path436" class="st0" d="M1729.4,22.8h1820.4v682.7H1729.4V22.8z"/>
 	</g>
 </g>
-<path id="path440" class="st15" d="M1729.4,22.8h1820.4v682.7H1729.4V22.8z"/>
+<path id="path440" class="st11" d="M1729.4,22.8h1820.4v682.7H1729.4V22.8z"/>
 <g id="g444">
 	<g id="use442">
 		<g id="glyph-4-1">
@@ -750,20 +698,16 @@
 </g>
 <g>
 	<defs>
-		<rect id="SVGID_00000094581207708458044600000016147148882298141586_" x="5711.6" y="22.8" width="1365.3" height="682.7"/>
+		<rect id="SVGID_00000161595128154629282210000006756483921332225427_" x="5711.6" y="22.8" width="1365.3" height="682.7"/>
 	</defs>
-	<clipPath id="SVGID_00000154424806205451663480000002795900258044102285_">
-		<use xlink:href="#SVGID_00000094581207708458044600000016147148882298141586_"  style="overflow:visible;"/>
+	<clipPath id="SVGID_00000138565030174122826540000005745162453801204380_">
+		<use xlink:href="#SVGID_00000161595128154629282210000006756483921332225427_"  style="overflow:visible;"/>
 	</clipPath>
-	<g id="g448" style="clip-path:url(#SVGID_00000154424806205451663480000002795900258044102285_);">
-		
-			<pattern  id="path446_00000054227469484517480200000004354441125832533135_" xlink:href="#pattern-1" patternTransform="matrix(8.668512e-02 0 0 -8.668607e-02 -6876.938 -22881.0684)">
-		</pattern>
-		<path id="path446" style="fill:url(#path446_00000054227469484517480200000004354441125832533135_);" d="M5711.6,22.8h1365.3
-			v682.7H5711.6V22.8z"/>
+	<g id="g448" style="clip-path:url(#SVGID_00000138565030174122826540000005745162453801204380_);">
+		<path id="path446" class="st13" d="M5711.6,22.8h1365.3v682.7H5711.6V22.8z"/>
 	</g>
 </g>
-<path id="path450" class="st15" d="M5711.6,22.8h1365.3v682.7H5711.6V22.8z"/>
+<path id="path450" class="st11" d="M5711.6,22.8h1365.3v682.7H5711.6V22.8z"/>
 <g id="g458">
 	<g id="use452">
 		<g id="glyph-4-2">
@@ -789,8 +733,8 @@
 		</g>
 	</g>
 </g>
-<path id="path460" class="st7" d="M5825.3,4107.3V2184.5H3353.4"/>
-<path id="path462" class="st8" d="M3245.5,2184.5l159.3-79.6l-39.8,79.6l39.8,79.6L3245.5,2184.5z"/>
+<path id="path460" class="st4" d="M5825.3,4107.3V2184.5H3353.4"/>
+<path id="path462" class="st5" d="M3245.5,2184.5l159.3-79.6l-39.8,79.6l39.8,79.6L3245.5,2184.5z"/>
 <g id="g466">
 	<g id="use464">
 		<g id="glyph-0-1_00000116917942304188164050000009212995281998868630_">
@@ -891,7 +835,7 @@
 		</g>
 	</g>
 </g>
-<path id="path500" class="st12" d="M2070.7,1843.2h1137.8v682.7H2070.7V1843.2z"/>
+<path id="path500" class="st9" d="M2070.7,1843.2h1137.8v682.7H2070.7V1843.2z"/>
 <g id="g504">
 	<g id="use502">
 		<g id="glyph-3-2_00000132081950824145268460000003836040356787562669_">
