@@ -51,11 +51,6 @@ System zweier Differentialgleichungen zum Beschreiben der positiven Autoregulati
     $k_s$ & $0.4\text{ min$^{-1}$}$
 \end{tabular}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\linewidth]{images/positive_autoregulation.jpg}
-\end{figure}
-
 Konzentration von RNA und Protein nimmt so lange zu, bis der Steady-State erreicht wurde.\\
 Würde das Experiment mit einer Proteinkonzentration über dem Steady-State-Wert starten, würde die Konzentration in der Folge auf diesen hinunterfallen.
 
@@ -80,11 +75,6 @@ System zweier Differentialgleichungen zum Beschreiben der negativen Autoregulati
     $k_{dr}$ & $0.36\text{ min$^{-1}$}$ \\
     $k_s$ & $0.4\text{ min$^{-1}$}$
 \end{tabular}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\linewidth]{images/negative_autoregulation.jpg}
-\end{figure}
 
 Konzentration von RNA und Protein überschiessen zuerst den Steady-State-Wert bevor sie darauf zurückfallen.
 
@@ -117,6 +107,46 @@ Lac-Operon\cite{lacoperon}
     \item protein decay rate of U = 0.056 min$^{-1}$
     \item mRNA decay rate of V = 0.36 min$^{-1}$
 \end{itemize}
+
+\vspace{2em}
+
+\textbf{Transkriptions-Geschwindigkeit}
+
+\begin{tabular}{p{.4\linewidth} p{.5\linewidth}}
+    Durchschnittliche Proteinlänge & 325 Aminosäure $\Rightarrow$ 975 Nukleotide \\
+    Transkriptions-Geschwindigkeit einer RNA Polymerase & 20-90 Nukleotide/s \\
+    Benötigte Zeit für die Transkription eines Proteins & $\dfrac{975 \text{ Nukleotide}}{50 \text{ Nukleotide/s}}\approx 20 \text{ s}$ \\
+    Rate der Transkription & $\dfrac{1\text{ mRNA}}{20\text{ s$^{-1}$}}=0.05\text{ mRNA s$^{-1}$}=3\text{ mRNA min$^{-1}$}$
+\end{tabular}
+
+Weiter gehen wir davon aus, dass maximal alle 4 Sekunden eine neue RNA Polymerase die Transkription starten kann. Daraus geht heraus, dass in 20 Sekunden die Transkription 5-mal stattfindet. Für die Rate ergibt dies dann $5\cdot 3\text{ mRNA min$^{-1}$}=15\text{ mRNA min$^{-1}$}$.\\
+Um auf $v_{max}$ zu gelangen, müssen wir die Rate noch mit der Konzentration der DNA multiplizieren. Als Vereinfachung gehen wir einfach davon aus, dass unser Gen 1-mal in der Zelle vorhanden ist und dementsprechend die Konzentration ungefähr $1\text{ nM}$ entspricht. Damit ergibt sich
+\[v_\text{max}=15\text{ nM min$^{-1}$}\]
+
+\vspace{2em}
+
+\textbf{Translations-Geschwindigkeit}
+
+\begin{tabular}{p{.4\linewidth} p{.5\linewidth}}
+    Halbwertszeit von mRNA & $2-6\text{ min}$ \\
+    Durchschnittliche Lebenszeit einer mRNA & $\dfrac{1}{\ln2}\cdot 3\text{ min}=4.32\text{ min}$ \\
+    Ungefähre Zeit zwischen Initiation der Translation & $3\text{ s}$ \\
+    produzierte Protein pro mRNA & $\dfrac{60\text{ s}\cdot 4.32\text{ min}}{3\text{ s}}=86.4\text{ Proteine/mRNA}$ \\
+    Rate der Translation & $\dfrac{86.4\text{ Proteine}}{4.32\text{ min}}=20\text{ min$^{-1}$}$
+\end{tabular}
+
+\vspace{2em}
+
+\textbf{Degradationsraten und Affinität}
+
+\begin{tabular}{p{.2\linewidth}|p{.4\linewidth}|p{.3\linewidth}}
+    Was? & Werte & resultierende Konstante \\ \hline
+     Halbwertszeit von bakteriellen Proteinen\cite{Koch1955-sx}\cite{Mandelstam1958-ne}\cite{Maurizi1992} & Wenige Stunden bis zu 70 Stunden bzw. über längere Zeit stabil, je nach Protein und Zustand und Umgebung des Organismus & $k_{dp}=\dfrac{\ln2}{60\text{ min}\cdot 1}=0.011\text{ min}^{-1}$ \\
+     Halbwertszeit von mRNA\cite{Bernstein2002-af}\cite{Taniguchi2010-fj}\cite{Selinger2003-or} & Im Bereich von 5 Minuten & $k_{dr}=\dfrac{\ln2}{5\text{ min}}=0.23\text{ min}^{-1}$ \\
+     Affinität vom TF & Als Beispiel die Affinität von LacI und DNA & $K=10^{-10}-10^{-11}\text{ M}$ \\
+\end{tabular}
+
+Für unser Protein haben wir kurze Halbwertszeiten gewählt, da wir von einem Protein ausgehen, welches von der Zelle in kurzen Zeitabständen reguliert werden muss. Dass dies die Anpassungseffizienz erhöht, zeigt sich direkt, im Vergleich unterschiedlicher Degradationsraten. Umso schneller degradiert wird, desto schneller wird ein neuer Steady-State erreicht.
 
 \section*{Repressorfunktion des lac-Operons}
 
