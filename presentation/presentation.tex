@@ -415,12 +415,13 @@
 
 \begin{frame}{Numerische Lösung mit Matlab}
     \begin{columns}
-        \column{.5\textwidth}
+        \column{.4\textwidth}
             \textbf{Gleichgewichtszustand}\\[1em]
             
             \begin{itemize}
                 \item $\text{RNA}_\text{Synthese}=\text{RNA}_\text{Degradation}$
                 \item $\text{Protein}_\text{Synthese}=\text{Protein}_\text{Degradation}$
+                \vspace{1em}
                 \item RNA bei ungefähr 0.02 nM
                 \begin{itemize}
                     \item \emph{\tiny Vorausgesagt: <stationäre Lösung>}
@@ -432,7 +433,7 @@
 
                 \item $\dfrac{[\text{RNA}]}{[\text{Protein}]}\approx \dfrac{1}{1725}$
             \end{itemize}
-        \column{.5\textwidth}
+        \column{.6\textwidth}
         
         \begin{figure}
             \centering
@@ -441,8 +442,7 @@
     \end{columns}
 \end{frame}
 
-% TBD
-\begin{frame}{Biologische Bedeutung}
+\begin{frame}{Unterschiedliche Bedingungen}
     \begin{columns}
         \column{.6\textwidth}
         \begin{itemize}
@@ -457,7 +457,7 @@
         \column{.4\textwidth}
         \begin{figure}
             \centering
-            \includegraphics[width=\linewidth]{images/negative_autoregulation_high_protein.m.png}
+            \includegraphics[width=\linewidth]{images/simulations/negative_autoregulation_high_protein.m.png}
         \end{figure}
     \end{columns}
 
@@ -466,19 +466,15 @@
         \begin{itemize}
             \item Affinität des Repressors hat grossen Einfluss ($K$)
             \begin{itemize}
-                \item $K=1\text{ nM}$ TODO GRAFIK
+                \item $K=1\text{ nM}$
                 \item Je kleiner die Affinität ($\uparrow K$), desto höher die GGW-Konzentration
-            \end{itemize}
-            \item Degradationsraten bestimmen die Zeit bis zum Gleichgewicht
-            \begin{itemize}
-                \item Je schneller die Degradation, desto eher stellt sich ein neuer GGW ein
             \end{itemize}
         \end{itemize}
         \column{.4\textwidth}
 
         \begin{figure}
             \centering
-            % \includegraphics[width=\linewidth]{images/negative_autoregulation_low_affinity.m.png}
+            \includegraphics[width=\linewidth]{images/simulations/negative_autoregulation_low_affinity.m.png}
         \end{figure}
     \end{columns}
     % @Xaver: Macht @Mario noch am Sonntag sofern du nicht schon vorher Lust drauf hast. Kommt dann auch noch mit dem Aufzeigen von verschiedenen Parametern zustande.
@@ -489,11 +485,29 @@
     % Kurve ist leicht anpassbar, im Endeffekt müssen nur Affinitäten verändert werden 
 \end{frame}
 
+\begin{frame}{Unterschiedliche Bedingungen}
+    \begin{columns}
+        \column{.6\textwidth}
+        \begin{itemize}
+            \item Degradationsraten bestimmen die Zeit bis zum Gleichgewicht
+            \begin{itemize}
+                \item Je schneller die Degradation, desto eher stellt sich ein neuer GGW ein
+            \end{itemize}
+        \end{itemize}
+        
+        \column{.4\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/simulations/negative_autoregulation_high_protein.m.png}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
 % Mario
 \begin{frame}{Vergleich mit positiver Rückkopplung}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{images/positive_autoregulation_basic.m.png}
+    \includegraphics[width=\textwidth]{images/simulations/positive_autoregulation_basic.m.png}
 \end{figure}
 \end{frame}
 
