@@ -4,6 +4,8 @@
 \usepackage{parskip}
 \usepackage[a4paper, margin=6em]{geometry}
 \usepackage{biblatex}
+\usepackage{tabularx}
+\usepackage{multirow}
 
 \addbibresource{sources.bib}
 
@@ -99,14 +101,7 @@ Die Synthese ist etwas komplexer, da wir hier die Konzentration von $P$ und die 
 \end{equation}
 
 \newpage
-\section{Values scraped from places}
-Lac-Operon\cite{lacoperon}
-\begin{itemize}
-    \item $A \cdot e^{-E/RT} = k$ = 853 L/mol*min at 37°C (?)
-    \item transcription \& translation rate = 0.4 min$^{-1}$
-    \item protein decay rate of U = 0.056 min$^{-1}$
-    \item mRNA decay rate of V = 0.36 min$^{-1}$
-\end{itemize}
+\section{Konstanten für Modell}
 
 \vspace{2em}
 
@@ -164,6 +159,8 @@ Eine wichtige Regulation des Lac-Operons ist die Repression des Gens, sofern ein
     \frac{d[\text{Lactase}]}{dt}&=k_\text{translation}\cdot[\text{RNA}]-k_\text{ldeg}\cdot [\text{Lactase]}\\
     \frac{d[\text{RNA}]}{dt}&=k_\text{transcription}\cdot[\text{DNA}_\text{total}]\cdot\frac{K_\text{Diss DNA}}{K_\text{Diss DNA}+([\text{LacI}_\text{total}]\cdot\frac{[\text{Lactose}]}{K_\text{Diss LacI}+[\text{Lactose}]})}-k_\text{rdeg}\cdot[\text{RNA}]
 \end{align*}
+
+
 
 \printbibliography[title=References]
 

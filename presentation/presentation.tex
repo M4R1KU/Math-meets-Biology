@@ -2,6 +2,9 @@
 
 \usepackage[labelformat=empty]{caption}
 \usepackage[version=4]{mhchem}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{listings}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
@@ -9,7 +12,7 @@
 \usepackage{biblatex}
 \addbibresource{../sources.bib}
 
-\title{Lösungen einfacher Differentialgleichungssysteme zur Autoregulation}
+\title{Einfache Differentialgleichungssysteme zur Autoregulation}%Einfache Differentialgleichungssysteme zur Autoregulation ?
 \date[28.03.2023]{28.03.2023}
 \author{Mario Kunz, Xaver Hanushevsky}
 \institute{D-BIOL}
@@ -27,37 +30,42 @@
 \titleframe
 
 % Wer die bessere Idee hat
-\begin{frame}[fragile]{Intro}
-    Etwas Kreatives einfallen lassen für hier
-\end{frame}
-
-% Xaver
-% shorten?
-\begin{frame}{Das Lac Operon}
-\begin{columns}
-    \column{.4\textwidth}
-
-    \begin{itemize}
-        \item Positive Regulation durch cAMP\\
-        \begin{itemize}
-            \item cAMP Synthese inhibiert in Präsenz von \emph{Glucose}
-            \item cAMP bindet and CRP
-            \item Homodimer bindet vor Promoter an DNA
-            \item Interaktion mit $\alpha$-Untereinheit von RNA Pol führt zu Initiation
-        \end{itemize}
-        \item Negative Regulation durch freies LacI-Protein
-        \begin{itemize}
-            \item Allolactose inaktiviert LacI \\ $\ce{Lactose $\xrightleftharpoons{LacY}$ Allolactose}$
-        \end{itemize}
-        \item[$\Rightarrow$] Lac Operon nur exprimiert in Präsenz von Lactose und Abwesenheit von Glucose
-    \end{itemize}
-
-    {\tiny cAMP = cyclic AMP, CRP = cAMP receptor protein}
-    
-    \column{.6\textwidth}
+\begin{frame}[fragile]{Ist das relevant für mich?}
     \begin{figure}
         \centering
-        \includegraphics[width=\textwidth]{images/lac_operon.png}
+        \includegraphics[width=.8\textwidth]{images/WhatEvenIsThis.png}
+    \end{figure}
+    \pause
+    \begin{tikzpicture}[remember picture,overlay]
+       \node at (current page.center) {\includegraphics[width=0.8\paperwidth]{images/SystembiologieVVZ.png}};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Ziel unserer Arbeit}
+\begin{columns}
+    \column{.5\textwidth}
+
+    \begin{itemize}
+        \item Mathematisches Modell für
+        \begin{enumerate}
+            \item negative Autoregulation
+            \item positive Autoregulation
+        \end{enumerate}
+        \item mRNA- und Protein-Konzentration soll beachtet werden
+        \begin{itemize}
+            \item Verhältnis mRNA:Protein untersuchbar
+        \end{itemize}
+        \item numerische Lösung mit MATLAB
+        \begin{itemize}
+            \item \emph{da die Systeme nicht analytisch lösbar sein werden}
+        \end{itemize}
+    \end{itemize}
+    
+    \column{.5\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.7\textwidth]{images/repression.png}
+        \caption{\tiny Negative Autoregulation}
     \end{figure}
 \end{columns}
 \end{frame}
@@ -112,36 +120,6 @@
 \end{frame}
 
 % Mario
-\begin{frame}{Ziel unserer Arbeit}
-\begin{columns}
-    \column{.5\textwidth}
-
-    \begin{itemize}
-        \item Mathematisches Modell für
-        \begin{enumerate}
-            \item negative Autoregulation
-            \item positive Autoregulation
-        \end{enumerate}
-        \item mRNA- und Protein-Konzentration soll beachtet werden
-        \begin{itemize}
-            \item Verhältnis mRNA:Protein untersuchbar
-        \end{itemize}
-        \item numerische Lösung mit MATLAB
-        \begin{itemize}
-            \item \emph{da die Systeme nicht analytisch lösbar sein werden}
-        \end{itemize}
-    \end{itemize}
-    
-    \column{.5\textwidth}
-    \begin{figure}
-        \centering
-        \includegraphics[width=.7\textwidth]{images/repression.png}
-        \caption{\tiny Negative Autoregulation}
-    \end{figure}
-\end{columns}
-\end{frame}
-
-% Mario
 \begin{frame}{Negative Autoregulation über mRNA und Repressorprotein}
     \centering Nur freie DNA führt zu Transkription\\[1em]
     mehr Protein $\Rightarrow$ \textbf{weniger} freie DNA $\Rightarrow$ \textbf{weniger} Transkription $\Rightarrow$ \textbf{weniger} Protein
@@ -174,7 +152,7 @@
     \column{.6\textwidth}
     \begin{itemize}
         \item $v_\text{on}=v_\text{off}$\\[8pt]
-        \item $\dfrac{d[\text{DNA}]}{dt}=-\dfrac{d[\text{DNA-P}]}{dt}=0$\\[8pt]
+        \item $\dfrac{d[\text{DNA}]}{dt}=\dfrac{d[\text{DNA-P}]}{dt}=0$\\[8pt]
     \end{itemize}
     \[k_\text{on}\cdot [\text{DNA}]\cdot [\text{P}]=k_\text{off}\cdot [\text{DNA-P}]\]
     \end{columns}
@@ -187,7 +165,7 @@
     \centering
     \includegraphics[width=2cm]{images/DNA-binding_equilibrium.png}
     \column{.3\textwidth}
-    \[K=\frac{k_\text{off}}{k_\text{on}}=\frac{[\text{DNA}]\cdot [\text{P}]}{[\text{DNA-P}]}\]\pause
+    \[K_d=\frac{k_\text{off}}{k_\text{on}}=\frac{[\text{DNA}]\cdot [\text{P}]}{[\text{DNA-P}]}\]\pause
     \column{.3\textwidth}
         \[[\text{DNA$_\text{Total}$}]=[\text{DNA}]+[\text{DNA-P}]\]\\[-2em]
         \[[\text{DNA}]=[\text{DNA$_\text{Total}$}]-[\text{DNA-P}]\]
@@ -210,7 +188,7 @@
     \begin{columns}
         \column{.4\textwidth}
         Konzentration der besetzten DNA\vspace{1em}
-        \[[\text{DNA-P}]=[\text{DNA$_\text{Total}$}]\cdot\color{ETHPurple}\frac{[\text{P}]}{K+[\text{P}]}\]
+        \[[\text{DNA-P}]=[\text{DNA$_\text{Total}$}]\cdot\color{ETHPurple}\frac{[\text{P}]}{K_d+[\text{P}]}\]
         \pause
         
         \column{.6\textwidth}
@@ -237,9 +215,9 @@
 \end{block}
 
 \begin{align*}
-    z&=1-\frac{[\text{P}]}{K+[\text{P}]}\\[2em]
-    z&=\frac{K}{K+[\text{P}]}\\[2em]
-    [\text{DNA}]&=[\text{DNA}_\text{Total}]\cdot \frac{K}{K+[\text{P}]}
+    z&=1-\frac{[\text{P}]}{K_d+[\text{P}]}\\[2em]
+    z&=\frac{K_d}{K_d+[\text{P}]}\\[2em]
+    [\text{DNA}]&=[\text{DNA}_\text{Total}]\cdot \frac{K_d}{K_d+[\text{P}]}
 \end{align*}
 
 
@@ -284,13 +262,13 @@
         % pause does not work with the align environment
         \begin{align*}
             \action<+->{\frac{d[\text{RNA}]}{dt}&=\text{RNA}_{\text{Transkription}}-\text{RNA}_{\text{Degradation}}\\[2em]}
-            \action<+->{\text{RNA}_{\text{Transkription}}&=}\only<+>{k_\text{t}\cdot [\text{DNA}]}\only<+->{k_{\text{t}} \cdot [\text{DNA}_\text{Total}]  \cdot \frac{K}{K+[\text{P}]}}\\
+            \action<+->{\text{RNA}_{\text{Transkription}}&=}\only<+>{k_\text{t}\cdot [\text{DNA}]}\only<+->{k_{\text{t}} \cdot [\text{DNA}_\text{Total}]  \cdot \frac{K_d}{K_d+[\text{P}]}}\\
             \action<+->{\text{RNA}_{\text{Degradation}}&=}\action<+->{k_{dr} \cdot [\text{RNA}]}
         \end{align*}
     \end{columns}
 
     \vspace{3em}
-    \[\action<+->{\frac{d[\text{RNA}]}{dt}=\action<+->{\underbrace{k_{\text{t}} \cdot [\text{DNA}_\text{Total}]}_{v_\text{max}} \cdot \frac{K}{K+[\text{P}]}-k_{dr} \cdot [\text{RNA}]}}\]
+    \[\action<+->{\frac{d[\text{RNA}]}{dt}=\action<+->{\underbrace{k_{\text{t}} \cdot [\text{DNA}_\text{Total}]}_{v_\text{max}} \cdot \frac{K_d}{K_d+[\text{P}]}-k_{dr} \cdot [\text{RNA}]}}\]
 \end{frame}
 
 % Mario
@@ -312,29 +290,22 @@
 \end{frame}
 
 % Mario
-\begin{frame}{Mathematische Modellierung}
+\begin{frame}{Mathematische Modellierung\hfill {\small\textcolor{ETHBlue}{Negative Autoregulation}}}
     \begin{columns}
         \column{.3\textwidth}
         \includegraphics[width=\textwidth]{images/repression.png}
         \column{.7\textwidth}
         \begin{align*}
-            \colorbox[HTML]{FFD966}{$\dfrac{d[\text{RNA}]}{dt}$}&=v_{\text{max}}\cdot\frac{K}{K+[\text{P}]}-k_{dr}\cdot [\text{RNA}]\\[16pt]
+            \colorbox[HTML]{FFD966}{$\dfrac{d[\text{RNA}]}{dt}$}&=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-k_{dr}\cdot [\text{RNA}]\\[16pt]
             \colorbox[HTML]{A680B8}{$\dfrac{d[\text{P}]}{dt}$}&=k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]
         \end{align*}
     \end{columns}
 \end{frame}
 
-% Xaver
-\begin{frame}[t]{Stationäre Lösung}
-
-    @Xaver Schnell erklären was eine stationäre Lösung ist und was unser Ziel damit ist
-
-\end{frame}
-
 \begin{frame}[t]{Stationäre Lösung herleiten}
     \begin{columns}[t]
         \column{.5\textwidth}
-            \[\frac{d[\text{RNA}]}{dt}=v_{\text{max}}\cdot\frac{K}{K+[\text{P}]}-[\text{RNA}] \cdot k_{dr}\]
+            \[\frac{d[\text{RNA}]}{dt}=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-[\text{RNA}] \cdot k_{dr}\]
         \column{.5\textwidth}
             \[\frac{d[\text{P}]}{dt}= k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]\]
     \end{columns}
@@ -344,7 +315,7 @@
 \begin{frame}[t]{Stationäre Lösung herleiten}
     \begin{columns}[t]
         \column{.5\textwidth}
-            \[0=v_{\text{max}}\cdot\frac{K}{K+[\text{P}]}-[\text{RNA}] \cdot k_{dr}\]
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-[\text{RNA}] \cdot k_{dr}\]
         \column{.5\textwidth}
             \[0= k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]\]
     \end{columns}
@@ -358,38 +329,75 @@
     \pause
     \begin{columns}[t]
         \column{.5\textwidth}
-            \[0=v_{\text{max}}\cdot\frac{K}{K+[\text{P}]}-\textcolor{ETHPurple}{[\text{RNA}]} \cdot k_{dr}\]
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-\textcolor{ETHPurple}{[\text{RNA}]} \cdot k_{dr}\]
             \pause
-            \[0=v_{\text{max}}\cdot\frac{K}{K+[\text{P}]}-\textcolor{ETHPurple}{\frac{k_{dp} \cdot [\text{P}]}{k_s}} \cdot k_{dr}\]
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-\textcolor{ETHPurple}{\frac{k_{dp} \cdot [\text{P}]}{k_s}} \cdot k_{dr}\]
             \pause
-            \[0=[\text{P}]^2 \cdot \underbrace{k_{dp} \cdot k_{dr}}_{a} + [\text{P}] \cdot \underbrace{K \cdot k_{dp} \cdot k_{dr}}_{b} - \underbrace{v_{\text{max}} \cdot K \cdot k_s}_{c}\]
+            \[0=[\text{P}]^2 \cdot \underbrace{k_{dp} \cdot k_{dr}}_{a} + [\text{P}] \cdot \underbrace{K_d \cdot k_{dp} \cdot k_{dr}}_{b} - \underbrace{v_{\text{max}} \cdot K_d \cdot k_s}_{c}\]
             \pause
-            \[[\text{P}] = \texttt{<value>}\]
         \column{.5\textwidth}
-            \[\]
     \end{columns}
     \begin{columns}[t]
         \column{.5\textwidth}
-            \[\]
+            \[\Downarrow\text{Mitternachtsformel(a,b,c)}\]
+            \[[\text{P}] = \]
         \column{.5\textwidth}
-            \[[\text{RNA}] = \frac{k_{dp} \cdot \texttt{<value>}}{k_s}\]
-            \[[\text{RNA}] = \texttt{<value 2>}\]
+        \[[\text{RNA}] = \]
     \end{columns}
 
 \end{frame}
 
 % Xaver
 \begin{frame}{Konstanten}
-\begin{tabular}{p{.2\linewidth}|p{.4\linewidth}|p{.3\linewidth}}
-    Was? & Werte & resultierende Konstante \\ \hline
-     Halbwertszeit von bakteriellen Proteinen\cite{Koch1955-sx}\cite{Mandelstam1958-ne}\cite{Maurizi1992} & Wenige Stunden bis zu 70 Stunden bzw. über längere Zeit stabil, je nach Protein und Zustand und Umgebung des Organismus & $k_{dp}=\dfrac{\ln(2)}{60\text{ min}\cdot 15}=0.00077\text{ min}^{-1}$ \\
-     Halbwertszeit von mRNA\cite{Bernstein2002-af}\cite{Taniguchi2010-fj}\cite{Selinger2003-or} & Im Bereich von 5 Minuten & $k_{dr}=\dfrac{\ln(2)}{5\text{ min}}=0.138\text{ min}^{-1}$ \\
-     Affinität vom TF & Affinität von LacI und DNA & $K=10^{-10}-10^{-11}\text{ M}$ \\
-     Average translation rate\cite{Guet2008} & 8 AA/s & $k_s = 3 * 8 = 24 \text{s$^{-1}$}$
-\end{tabular}
+    \renewcommand{\arraystretch}{2}
+    \begin{tabular}{m{.4\textwidth}|p{.2\textwidth}|p{.3\textwidth}}
+        \multirow{3}*{$\dfrac{d[\text{RNA}]}{dt}=v_\text{max}\cdot\dfrac{K_d}{K_d+[\text{P}]}-k_{dr}\cdot [\text{RNA}]$}
+        & $v_\text{max}$ & $15\text{ nM min$^{-1}$}$ \\
+        & $K_d$ & $10^{-2}\text{ nM}=10^{-11}\text{ M}$ \\
+        & $k_\text{dr}$ & $0.23\text{ min$^{-1}$}$ \\
+        \hline
+        \multirow{2}*{$\dfrac{d[\text{P}]}{dt}=k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]$}
+        & $k_\text{s}$ & $20\text{ min$^{-1}$}$ \\
+        & $k_\text{dp}$ & $0.011\text{ min$^{-1}$}$ \\
+    \end{tabular}
 \end{frame}
 
-\begin{frame}{Numerische Lösungen mit Matlab}
+\begin{frame}[t]{Stationäre Lösung herleiten}
+    \begin{columns}[t]
+        \column{.5\textwidth}
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-[\text{RNA}] \cdot k_{dr}\]
+        \column{.5\textwidth}
+            \[0= k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]\]
+    \end{columns}
+    
+    \begin{columns}[t]
+        \column{.5\textwidth}
+            
+        \column{.5\textwidth}
+            \[\Rightarrow \textcolor{ETHPurple}{[\text{RNA}]}=\frac{k_{dp} \cdot [\text{P}]}{k_s}\]
+    \end{columns}
+    
+    \begin{columns}[t]
+        \column{.5\textwidth}
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-\textcolor{ETHPurple}{[\text{RNA}]} \cdot k_{dr}\]
+            
+            \[0=v_{\text{max}}\cdot\frac{K_d}{K_d+[\text{P}]}-\textcolor{ETHPurple}{\frac{k_{dp} \cdot [\text{P}]}{k_s}} \cdot k_{dr}\]
+            
+            \[0=[\text{P}]^2 \cdot \underbrace{k_{dp} \cdot k_{dr}}_{a} + [\text{P}] \cdot \underbrace{K_d \cdot k_{dp} \cdot k_{dr}}_{b} - \underbrace{v_{\text{max}} \cdot K_d \cdot k_s}_{c}\]
+        \column{.5\textwidth}
+    \end{columns}
+    \begin{columns}[t]
+        \column{.5\textwidth}
+            \[\Downarrow\text{Mitternachtsformel(a,b,c)}\]
+            \[[\text{P}] = \pm34.43\text{ nM}\]
+        \column{.5\textwidth}
+            \[[\text{RNA}] = \pause \frac{k_{dp} \cdot 34.43\text{ nM}}{k_s}\]
+            \[[\text{RNA}] = 0.0189\text{ nM}\]
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Numerische Lösungen mit MATLAB}
     Simulation des Modells mit bestimmten Anfangswerten
     \begin{itemize}
         \item[$\Rightarrow$] keine Störungen
@@ -397,7 +405,7 @@
     \end{itemize}
 
     \vspace{4em}
-    \textbf{Was ist Matlab?}\\
+    \textbf{Was ist MATLAB?}\\
     \begin{itemize}
         \item Programmiersprache und -umgebung zum Lösen mathematischer Probleme
         \item \emph{Verfügt über mehrere Funktionen, Differentialgleichungen zu lösen}
@@ -406,14 +414,14 @@
 \end{frame}
 
 % Mario
-\begin{frame}{Numerische Lösung mit Matlab\hfill {\small \color[ETHBblue]{Negative Autoregulation}}}
+\begin{frame}{Numerische Lösung mit MATLAB\hfill {\small \textcolor{ETHBlue}{Negative Autoregulation}}}
 \begin{figure}
     \centering
     \includegraphics[width=.7\textwidth]{images/simulations/negative_autoregulation_basic.m.png}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Numerische Lösung mit Matlab\hfill {\small Negative Autoregulation}}
+\begin{frame}{Numerische Lösung mit MATLAB\hfill {\small \textcolor{ETHBlue}{Negative Autoregulation}}}
     \begin{columns}
         \column{.4\textwidth}
             \textbf{Gleichgewichtszustand}\\[1em]
@@ -424,11 +432,11 @@
                 \vspace{1em}
                 \item RNA bei ungefähr 0.02 nM
                 \begin{itemize}
-                    \item \emph{\tiny Vorausgesagt: <stationäre Lösung>}
+                    \item \emph{\tiny Vorausgesagt: $0.0189\text{ nM}$}
                 \end{itemize}
                 \item Protein bei ungefähr 34.5 nM
                 \begin{itemize}
-                    \item \emph{\tiny Vorausgesagt: <stationäre Lösung>}
+                    \item \emph{\tiny Vorausgesagt: $34.43\text{ nM}$}
                 \end{itemize}
 
                 \item $\dfrac{[\text{RNA}]}{[\text{Protein}]}\approx \dfrac{1}{1725}$
@@ -442,7 +450,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Unterschiedliche Bedingungen\hfill {\small Negative Autoregulation}}
+\begin{frame}{Unterschiedliche Bedingungen\hfill {\small \textcolor{ETHBlue}{Negative Autoregulation}}}
     \begin{columns}
         \column{.6\textwidth}
         \begin{itemize}
@@ -465,10 +473,10 @@
     \begin{columns}
         \column{.6\textwidth}
         \begin{itemize}
-            \item Affinität des Repressors zur DNA ($K$) hat grossen Einfluss auf die Gleichgewichtskonzentration
+            \item Affinität des Repressors zur DNA ($K_d$) hat grossen Einfluss auf die Gleichgewichtskonzentration
             \begin{itemize}
-                \item $K=1\text{ nM}$
-                \item Je kleiner die Affinität ($\uparrow K$), desto höher die GGW-Konzentration
+                \item $K_d=1\text{ nM}$
+                \item Je kleiner die Affinität ($\uparrow K_d$), desto höher die GGW-Konzentration
             \end{itemize}
         \end{itemize}
         \column{.4\textwidth}
@@ -480,7 +488,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Unterschiedliche Bedingungen\hfill {\small Negative Autoregulation}}
+\begin{frame}{Unterschiedliche Bedingungen\hfill {\small \textcolor{ETHBlue}{Negative Autoregulation}}}
     \begin{columns}
         \column{.6\textwidth}
         \begin{itemize}
@@ -500,27 +508,113 @@
     \end{columns}
 \end{frame}
 
+\begin{frame}[fragile]{Code\hfill {\small \textcolor{ETHBlue}{Negative Autoregulation}}}
+    \begin{figure}
+        \centering
+        \includegraphics[height=.8\textheight]{images/code.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Mathematische Modellierung\hfill {\small\textcolor{ETHBlue}{Positive Autoregulation}}}
+    \begin{columns}
+        \column{.3\textwidth}
+        \includegraphics[width=\textwidth]{images/induction.png}
+        \column{.7\textwidth}
+        \begin{align*}
+            \colorbox[HTML]{FFD966}{$\dfrac{d[\text{RNA}]}{dt}$}&=v_{\text{max}}\cdot\textcolor{ETHRed}{\frac{[\text{P}]}{K_d+[\text{P}]}}-k_{dr}\cdot [\text{RNA}]\\[16pt]
+            \colorbox[HTML]{A680B8}{$\dfrac{d[\text{P}]}{dt}$}&=k_s\cdot[\text{RNA}]-k_{dp}\cdot[\text{P}]
+        \end{align*}
+    \end{columns}
+\end{frame}
+
 % Mario
-\begin{frame}{Vergleich mit positiver Rückkopplung}
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{images/simulations/positive_autoregulation_basic.m.png}
-\end{figure}
+\begin{frame}{Numerische Lösung mit MATLAB\hfill {\small\textcolor{ETHBlue}{Positive Autoregulation}}}
+    \begin{columns}
+        \column{.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/simulations/positive_autoregulation_basic.m.png}
+        \end{figure}
+
+        \column{.6\textwidth}
+        \begin{itemize}
+            \item Gleiche Parameter wie für negative Autoregulation
+            \begin{itemize}
+                \item $[\text{P}]_0=10\text{ nM}$
+                \item $[\text{P}]_0=0\text{ nM}$ würde zu keiner Expression führen
+            \end{itemize}
+            \item Gleichgewichtskonzentration limitiert durch $v_\text{max}$\\ {\tiny vgl. Folie 3}
+            \item Gleichgewichtszustand deutlich langsamer erreicht
+            \item Falls Initialkonzentration über GGW-Konzentration
+            \begin{itemize}
+                \item Proteinkonzentration fällt hinunter zum GGW
+                \item Kaum Einfluss auf RNA-Produktion
+            \end{itemize}
+            \item $\dfrac{[\text{RNA}]}{[\text{Protein}]}\approx \dfrac{1}{1550}$
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Biologische Verwendungen}
+    \begin{columns}
+        \column{.5\textwidth}
+        \centering
+        \textbf{Positive Autoregulation}
+        \begin{figure}
+            \includegraphics[width=.6\textwidth]{images/dna_positive_autoregulation.png}
+        \end{figure}
+
+        \begin{itemize}
+            \item All-or-Nothing response
+            \item Zwei stabile Zustände (an oder aus)
+            \item Zustand ist durch Mitose vererbar
+            \item Tochterzellen behalten so denselben Typ
+        \end{itemize}
+        
+        \column{.5\textwidth}
+        \centering
+        \textbf{Negative Autoregulation}
+        \begin{figure}
+            \includegraphics[width=.6\textwidth]{images/dna_negative_autoregulation.png}
+        \end{figure}
+
+        \begin{itemize}
+            \item Proteinkonzentration wird auf einem konstanten Level gehalten
+            \item Abweichungen führen zu sehr schneller Antwort
+            \item Korrektur erfolgt in beide Richtungen 
+        \end{itemize}
+    \end{columns}
 \end{frame}
 
 % TBD
-\begin{frame}{Vereinfachungen}
-    \begin{itemize}
-        \item Keine Verzögerungen durch Transkription und Translation
-        \item Sofortige Einstellung GGW DNA
+\begin{frame}{Erweiterungen des Modells}
+    \begin{columns}
+        \column{.5\textwidth}
+        \begin{itemize}
+            \item Beachtung von Verzögerungen in der Transkription und Translation
+            \item Verdünnung durch Zellwachstum
+            \item DNA-Bindeproteine sind oft kooperativ
+            \item Nacheinanderschaltung von verschiedenen "Schaltkreisen"
+            \item ...
+            \item Abbildung von echt vorkommenden Genen wie z.B. das Lac Operon
+        \end{itemize}
+        
+        \column{.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{images/network.png}
+        \end{figure}
+    \end{columns}
+\end{frame}
 
-        % Lac Operon spezifisch
-        \item kein CAP $\Rightarrow$ Effekt von Glucose auf die Genexpression
-        \item Lactose $\rightleftharpoons$ Allolactose
-        \item LacI eigentlich ein Tetramer + kooperative Bindung
-        \item Drei Bindungsstellen für Repressor
-        \item Lactose-Import in die Zelle durch LacY
-    \end{itemize}
+\begin{frame}{Abschluss}
+    \centering
+    Danke an Florin Gegenschatz, Dr. Alexander Caspar und Ana Kitanovic für die Unterstützung!
+
+    \vspace{4em}
+    \emph{Wer Lust auf mehr hat}\\[1em] 
+    Molecular Biology of the Cell, Chapter 8, Mathematical Analysis of Cell Functions\\[.5em]
+    4. Semester, Systembiologie
 \end{frame}
 
 \end{document}
